@@ -10,6 +10,7 @@ config :chatter, Chatter.Repo,
   password: "postgres",
   database: "chatter_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
+  port: 6432,
   pool: Ecto.Adapters.SQL.Sandbox
 
 config :chatter, ChatterWeb.Endpoint,
